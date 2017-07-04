@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Iota Faucet</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Iota Faucet</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="http://aboutiota.info/">About IOTA</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <h1>IOTA Faucet</h1>
+                <h2>Version: $version</h2>
+                <div class="row">
+                    <div class="col-lg-6" style="text-align: right;">
+                        <div style="display: inline-block;" class="g-recaptcha" data-sitekey="6LfkxgMTAAAAAKl8v_25oEQ4VxQOmEEgG1lsBbYa"></div>
+                        <form method="post" action="/confirm">
+                            <div class="input-group">
+                                <input class="input-lg form-control" type="text" name="walletAddress" placeholder="Wallet Address" />
+                                <span class="input-group-btn">
+                                    <input class="btn btn-success btn-lg btn-secondary" type="submit" value="Claim!" />
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6" style="text-align: left;">
+                        <h3>Claim your iotas now!</h3>
+                        <p>Iota is a powerful cryptocurrency with zero fees, fast transactions, and near-infinite scalability. <a href="http://aboutiota.info/">Learn more about Iota here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</body>
+
+</html>
